@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<title>DefaultInputValue example</title>
+<style>
+.no_value {
+    color: gray;
+}
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="../src/jquery.defaultInputValue.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('input.date').defaultInputValue({
+        default_text: 'MM/DD/YYYY',
+        no_value_class: 'no_value'
+    });
+});
+</script>
+</head>
+<body>
+
+<form>
+
+When is your birthday?           <input type="text" class="date" name="my_birthday" value="" />
+<br />
+When is your father's birthday?: <input type="text" class="date" name="dad_birthday" value="" />
+
+</form>
+
+</body>
+</html>
+

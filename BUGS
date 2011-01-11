@@ -1,0 +1,7 @@
+ - If the page is refreshed, Firefox will automatically refill in the form with
+the previous values, which means if anything has the default text, it will be
+filled in and we'll think that it's the "user" filling it in by hand. One way
+around this is to turn the text field into a hidden field and have it
+automatically filled from a visible dummy field. That's a lot of work. Can't we
+hang an event on a page refresh?
+

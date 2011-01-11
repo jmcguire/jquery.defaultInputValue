@@ -1,0 +1,56 @@
+Default Input View jQuery Plugin v0.5
+-----------------------------
+Copyright (c) 2011 Justin McGuire. Licensed under the MIT License.
+Contact: mcguire.justin@gmail.com
+
+Overview
+--------
+
+Fill in a text input with a default value, that disappears when you click on it
+to fill in a real value.
+
+Special Features:
+    - If the user actually types in the default value, we'll still recognize it
+      as user input, and it won't be automatically deleted on the next click.
+    - The default text *won't* be submitted with the form.
+
+
+Example Usage
+-------------
+
+HTML:
+
+    Date: <input type="text" class="date" />
+
+Javascript:
+
+    $('input.date').defaultInputValue({
+        default_text: 'MM/DD/YYYY',
+    });
+
+CSS (optional, but recommended):
+
+    .no_value { color: gray }
+
+
+Parameters
+----------
+
+default_text
+
+ - Required, this is the default value of the text field.
+
+no_value_class
+
+ - This is the CSS class that will be applied to the input element when it is 
+   filled with the default text. It defaults to 'no_value'.
+
+
+Misc Notes
+----------
+
+Minimum jQuery versions:
+
+    - jQuery    1.????
+
+
