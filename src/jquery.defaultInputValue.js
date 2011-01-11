@@ -44,7 +44,7 @@ $.fn.defaultInputValue = function(options) {
 
         // upon form submission, we don't want to submit any default values
         var input = $(this);
-        $(this).closest('form').get().submit(function(){
+        $(this).closest('form').submit(function(){
             if (input.hasClass(opts.no_value_class))
                 input.val('');
         });
