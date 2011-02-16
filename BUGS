@@ -5,3 +5,5 @@ around this is to turn the text field into a hidden field and have it
 automatically filled from a visible dummy field. That's a lot of work. Can't we
 hang an event on a page refresh?
 
+ - doesn't play nicely with DatePicker
+
